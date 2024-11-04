@@ -2,12 +2,6 @@
 
 Create a simple script that will scrape of fetch race details from [sportsbet.com.au](https://sportsbet.com.au)
 
-## Development strategy
-
-sportsbet.com.au is using Python to push data on the frontend on X intervals which makes it more like a webhook/websocket updates. Getting the data from API endpoints seems to be unreachable using axios' javascript.
-
-Hence, we are now scraping the endpoint `/racing-schedule` and using cheerio to format it to DOM. We can then filter the race on DOM manipulation.
-
 ## Setup involved in the VM
 
 1. Installed nodejs
@@ -18,10 +12,13 @@ Hence, we are now scraping the endpoint `/racing-schedule` and using cheerio to 
 
 ### Dependency
 
-1. Install nodejs 22.11.0
-2. Install axios `npm install axios`
-3. Install cheerio `npm install cheerio`
+1. Nodejs 22.11.0
+2. Axios 1.7.7
+3. Moment 2.30.1
 
 ### Execute
 
-1. Run `npm start`
+1. Clone this repo
+2. Go to repo dir
+3. Install packages `npm install`
+4. Run `npm start`
