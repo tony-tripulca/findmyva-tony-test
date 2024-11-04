@@ -4,7 +4,8 @@
   "description": "Create a simple script that will scrape of fetch race details from [sportsbet.com.au](https://sportsbet.com.au)",
   "main": "scraper.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node scraper.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/tony-tripulca/findmyva-tony-test#readme",
   "dependencies": {
-    "axios": "^1.7.7"
+    "axios": "^1.7.7",
+    "cheerio": "^1.0.0"
   }
 }
