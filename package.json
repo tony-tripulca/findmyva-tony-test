@@ -1,0 +1,22 @@
+{
+  "name": "findmyva-tony-test",
+  "version": "1.0.0",
+  "description": "Create a simple script that will scrape of fetch race details from [sportsbet.com.au](https://sportsbet.com.au)",
+  "main": "scraper.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tony-tripulca/findmyva-tony-test.git"
+  },
+  "author": "tony-tripulca",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tony-tripulca/findmyva-tony-test/issues"
+  },
+  "homepage": "https://github.com/tony-tripulca/findmyva-tony-test#readme",
+  "dependencies": {
+    "axios": "^1.7.7"
+  }
+}
