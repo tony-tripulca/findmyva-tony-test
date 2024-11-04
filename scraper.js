@@ -57,14 +57,16 @@ const main = () => {
       // Disect meetings
       section.meetings.forEach((meeting) => {
         // Disect events, this is the actual race data
-        meeting.events.forEach((event) => {
-          races.push({
-            date: moment.unix(event.startTime).format("YYYY-MM-DD"),
-            name: `"${event.name}"`, // escape other commas on the name
-            race_number: event.raceNumber,
-            start_time: moment.unix(event.startTime).format("HH:mm A"),
-          });
-        })
+        if(meeting.regionName === "Australia") {
+          meeting.events.forEach((event) => {
+            races.push({
+              date: moment.unix(event.startTime).format("YYYY-MM-DD"),
+              name: `"${event.name}"`, // escape other commas on the name
+              race_number: event.raceNumber,
+              start_time: moment.unix(event.startTime).format("HH:mm A"),
+            });
+          })
+        }
       });
     });
 
